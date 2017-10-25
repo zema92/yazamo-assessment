@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Open console :)
+</body>
+<script>
+    var input = [
+        {
+            '1': ['4', 'Lorem ipsum']
+        },
+        {
+            '3': ['2', 'Lorem ipsum']
+        }
+    ];
+
+    (function writeOutput(inputParam) {
+        var output = [];
+        var outputObj = {
+            question_id: null,
+            answer_value: null,
+            comments: ""
+        };
+
+        inputParam.forEach(function (inputElement) {
+            var myObj = Object.create(outputObj);
+            var inputElementKeys = Object.keys(inputElement);
+            var inputElementValues = inputElement[inputElementKeys];
+            myObj.question_id = +inputElementKeys[0];
+
+            for (var index in inputElementValues) {
+                if (inputElementValues.hasOwnProperty(index)) {
+                    myObj.answer_value = +index === 0 ? +inputElementValues[index] : myObj.answer_value;
+                    myObj.comments = +index === 1 ? inputElementValues[index] : myObj.comments;
+                }
+            }
+
+            output.push(myObj);
+        });
+
+        console.log("Sample input:");
+        console.log(input);
+        console.log("Sample output");
+        console.log(output);
+    })(input);
+</script>
+</html>
