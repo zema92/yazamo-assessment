@@ -1,0 +1,70 @@
+.container-wrapper {
+  margin: 30px;
+  width: 30vw;
+
+  #outer-container-wrapper {
+    form {
+      display: grid;
+      grid-template-columns: 9vw 1fr;
+      grid-column-gap: 3vw;
+      grid-row-gap: 20px;
+      padding-bottom: 20px;
+
+      label {
+        color: #ccc;
+        line-height: 40px;
+      }
+
+      textarea {
+        border: solid 1px #eee;
+        border-radius: 3px;
+        font-size: 0.75em;
+        padding: 1em 2em;
+      }
+
+      input[type=text] {
+        border: solid 1px #eee;
+        border-radius: 3px;
+        font-size: 12px;
+        padding: 1em 2em;
+      }
+    }
+
+    > label {
+      display: block;
+      padding: 10px 0;
+    }
+
+    .buttons--wrapper {
+      display: block;
+      margin-top: 20px;
+
+      .button {
+        padding: 1rem 3rem;
+        background: #fff;
+        border: solid 2px;
+        font-size: 0.875em;
+
+        &--blue {
+          border-color: blue;
+          color: blue;
+        }
+
+        &--blue:hover {
+          background: blue;
+          color: #fff;
+        }
+
+        &--orange {
+          border-color: orange;
+          color: orange;
+        }
+
+        &--orange:hover {
+          background:orange;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

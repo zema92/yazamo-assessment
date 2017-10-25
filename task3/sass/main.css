@@ -1,0 +1,47 @@
+.container-wrapper {
+  margin: 30px;
+  width: 30vw; }
+  .container-wrapper #outer-container-wrapper form {
+    display: grid;
+    grid-template-columns: 9vw 1fr;
+    grid-column-gap: 3vw;
+    grid-row-gap: 20px;
+    padding-bottom: 20px; }
+    .container-wrapper #outer-container-wrapper form label {
+      color: #ccc;
+      line-height: 40px; }
+    .container-wrapper #outer-container-wrapper form textarea {
+      border: solid 1px #eee;
+      border-radius: 3px;
+      font-size: 0.75em;
+      padding: 1em 2em; }
+    .container-wrapper #outer-container-wrapper form input[type=text] {
+      border: solid 1px #eee;
+      border-radius: 3px;
+      font-size: 12px;
+      padding: 1em 2em; }
+  .container-wrapper #outer-container-wrapper > label {
+    display: block;
+    padding: 10px 0; }
+  .container-wrapper #outer-container-wrapper .buttons--wrapper {
+    display: block;
+    margin-top: 20px; }
+    .container-wrapper #outer-container-wrapper .buttons--wrapper .button {
+      padding: 1rem 3rem;
+      background: #fff;
+      border: solid 2px;
+      font-size: 0.875em; }
+      .container-wrapper #outer-container-wrapper .buttons--wrapper .button--blue {
+        border-color: blue;
+        color: blue; }
+      .container-wrapper #outer-container-wrapper .buttons--wrapper .button--blue:hover {
+        background: blue;
+        color: #fff; }
+      .container-wrapper #outer-container-wrapper .buttons--wrapper .button--orange {
+        border-color: orange;
+        color: orange; }
+      .container-wrapper #outer-container-wrapper .buttons--wrapper .button--orange:hover {
+        background: orange;
+        color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
